@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Titillium+Web:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    
+}
+
+.containerPrincipal{
+    display: grid;
+    grid-template-columns: repeat(5,1);
+    grid-template-rows: 400px 1600px auto 100px 100px ;
+    grid-template-areas: "header        header        header        header        header"
+                         "menuPrincipal menuPrincipal menuPrincipal menuPrincipal menuPrincipal "
+                         "main          main          main          main          main"
+                         "containerCaja containerCaja containerCaja containerCaja containerCaja"
+                         "containerDos  main          main          main           main"
+                         "footer        footer        footer        footer        footer ";
+
+
+
+}
+
+
+
+.header{
+    grid-area: header;
+    background-image: url(../GoriGlueLOGOP.jpg);
+}
+
+.menuPrincipal{
+    background-color: rgb(155, 218, 163);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+    cursor: pointer;
+    list-style: none;
+    text-decoration: none;
+
+
+}
+
+.a {
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+   
+
+    
+}
+
+
+.Gori{
+    
+    background-size: cover;
+    height: 50%;
+    width: 100%;
+}
+
+
+h1{
+    color: rgb(18, 1, 1);
+    text-align: center;
+    font-size: 50px;
+    margin: 20px;
+
+}
+
+div{
+    
+    align-items: flex-start;
+
+}
+
+.div1{
+    font-size: 20px;
+    align-content: center;
+}
+
+.h4{
+    align-content: center;
+}
+
+.divlogoDos{
+    text-align: left;
+
+
+}
+.div.miniInfo{
+    align-items: center;
+
+}
+
+
+
+.containerCaja{ 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    column-gap: 15px;
+    
+}
+.containerDos {
+    display: flex;
+    justify-content: space-between;
+}
+
+.video{
+    width: 500px;
+    
+}
+
+.remeraNegra{
+    width: 25%;
+}
+.remeraBlanca{
+    width: 25%;
+}
+
+.HoddieInicio{
+    width: 25%;
+    size: 5cm;
+}
+.titulosInicio{
+    text-align: justify;
+    margin: 15%;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+
+.body2{
+    background-image: url(../pakka\ final.jpg);
+    
+}
+.Cuerpo1{
+    background-image: url(../pakka\ final.jpg)
+}
+
+.footer{
+    background-color: chartreuse;
+    padding: 1em 0;
+    text-align: center;
+    bottom: 0%;
+    width: 100%;
+}
+    
+.menuC{
+    list-style: none;
+}
+
+img .imgIndumentaria{
+    margin: 5cm;
+}
+
+.mainIndumentaria{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    place-items: center;
+
+}
+.img{
+width: 300px;
+height: 300px;
+transition: all 1seg;
+}
+
+.img:hover{
+    transform: translate(20px,20px);
+
+}
+
+.img1{
+    margin-left: 5cm;
+    width: 300px;
+    height: 300px;
+    
+}
+.img1:hover{
+    transform: translate(20px,20px);
+
+}
+
+@media(max-width:1024px){
+    .menuPrincipal{
+        background-color:  rgb(155, 218, 163);
+        display: flex;
+    }
+}
+
+a.a{ 
+        
+    justify-content: space-between;
+    font-size: 24px;}
+
+@media(max-width:952px){
+    .Gori{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 50%;
+        display: block;
+        margin: 0%;
+
+        }
+    
+    .menuPrincipal{
+        background-color: darkgrey;
+        display: flex;
+        justify-content: center;
+
+
+}
+    .containerCaja{
+
+    display: flex;
+    flex-direction: block;
+    flex-direction: column;
+    padding-left: 20%;
+    margin-left: -1.3cm;
+}
+
+    a.a{ 
+        
+    justify-content: space-between;
+    font-size: 26px;}
+
+    .h1{  
+    font-size: 26px;
+    padding-left: 40%;
+    display: flex;
+}
+
+}
+    .img{
+    width: 320px;
+    height: 390px;
+    transition: all 1seg;
+}
+.parrafo{
+    display: flex;
+    justify-content: center;
+    margin-left: 1cm;
+    margin-right: 1cm;
+}
+.compra{
+    display: flex;
+    justify-content: center;
+    margin-left: 1cm;
+    margin-right: 1cm;
+
+
+@media(max-width:440px){
+
+    .Gori{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 50%;
+        display: block;
+        margin: 0%;
+        
+    }
+
+    .menuPrincipal{     
+        background-color: rgb(235, 242, 136);
+        display: flex;
+        justify-items: center;
+        color: black;
+        
+
+    }
+    a.a{ 
+        
+        justify-content: space-between;
+        font-size: 16px;
+
+
+    }
+
+    .containerCaja{
+
+        display: flex;
+        flex-direction: block;
+        flex-direction: column;
+        padding-left: 20%;
+        margin-left: -1.3cm;
+    }
+
+    .containerDos{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .headerCuerpo1{
+        font-size: 35px;
+        padding-right: 17cm;
+        margin: 50px;
+    }
+    
+    .img{
+        width: 220px;
+        height: 390px;
+        transition: all 1seg;
+    }
+    .h1{
+        font-size: 20px;
+        padding-left: -20%;
+        display: flex;
+        background-color: rgb(251, 255, 247);
+        justify-content: left;
+    }
+    .h2{
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+
+    }
+    .h4{
+        font-size: 10px;
+        padding-left: -20%;
+        display: flex;
+        
+    }
+    .parrafo{
+        display: flex;
+        justify-content: center;
+        margin-left: 1cm;
+        margin-right: 1cm;
+    }
+    .compra{
+        display: flex;
+        justify-content: center;
+        margin-left: 1cm;
+        margin-right: 1cm;
+    }
+    
+}
