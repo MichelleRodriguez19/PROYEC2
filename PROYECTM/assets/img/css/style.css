@@ -28,7 +28,7 @@
 
 .header{
     grid-area: header;
-    background-image: url(../GoriGlueLOGOP.jpg);
+    background-image: url(../FondoGoriChiq.png);
 }
 
 .menuPrincipal{
@@ -99,14 +99,15 @@ div{
 
 .containerCaja{ 
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 20% 0.5fr 20% 0.2fr 5%;
     grid-template-rows: auto;
-    column-gap: 15px;
+    
+    
     
 }
 .containerDos {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .video{
@@ -139,6 +140,7 @@ div{
 
 .body2{
     background-image: url(../pakka\ final.jpg);
+    background-image: url(../FondoGoriChiq.png);
     
 }
 .Cuerpo1{
@@ -242,7 +244,7 @@ a.a{
 
 }
     .img{
-    width: 320px;
+    width: 300px;
     height: 390px;
     transition: all 1seg;
 }
@@ -252,12 +254,6 @@ a.a{
     margin-left: 1cm;
     margin-right: 1cm;
 }
-.compra{
-    display: flex;
-    justify-content: center;
-    margin-left: 1cm;
-    margin-right: 1cm;
-
 
 @media(max-width:440px){
 

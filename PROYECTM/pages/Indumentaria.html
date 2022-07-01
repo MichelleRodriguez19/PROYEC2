@@ -5,28 +5,72 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Indumentaria</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../assets/img/css/style.css">
-    <img class="Gori" src="../assets/img/GoriGlueLOGOP-min.jpg" alt=" logo Principal">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="../assets/img/EsteGoriGlueLOGOP-min.jpg" class="d-block w-100" alt="Gori">
+        </div>
+        <div class="carousel-item">
+          <img src="../assets/img/marydos.png" class= "d-block w-100" alt="MaryLogo">
+        </div>
+        <div class="carousel-item">
+          <img src="../assets/img/Empaque (5).jpg" class="d-block w-100" alt="Empaque5">
+        </div>
+        <div class="carousel-item">
+          <img src="../assets/img/esteGingerWilson (1) (2).jpg"class="d-block w-100" alt="GingerWilson">
+        </div>
+        
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
     <link rel="shortcut icon" href="../assets/favicon.png">
     
 </head>
 <nav class="body2"> 
 <body>
     <header>
-       <nav class="menuPrincipal">
-          <ul>
-             <li>
-                <strong>
-                <a class="a" href="../index.html">Inicio</a>
-                <a class="a"href="../pages/quienesSomos.html">¿Quienes Somos?</a>
-                <a class="a"href="../pages/Indumentaria.html">Indumentaria</a>
-                <a class="a" href="../pages/tresd.html">3D</a>
-                <a class="a"href="../pages/contacto.html">Contacto</a>
-                <img src="../assets/insta-01.png" alt="">
-                <img src="../assets/face-01.png" alt="">
-                </strong>
-             </li>
-          </ul>
+      <nav class="navbar navbar-expand-lg bg-light">
+         <div class="container-fluid">
+           <a class="navbar-brand" href="#">GoriGlue</a>
+           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"></span>
+           </button>
+           <div class="collapse navbar-collapse" id="navbarNav">
+             <ul class="navbar-nav">
+               <li class="nav-item">
+                 <a class="nav-link"  href="../index.html">Inicio</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link"  href="../pages/quienesSomos.html">¿Quienes somos?</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" aria-current="page" href="../pages/Indumentaria.html">Indumentaria</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="../pages/tresd.html">Bio3Degradable</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+               </li>
+             </ul>
+           </div>
+         </div>
        </nav>
     </header>
 
@@ -34,86 +78,180 @@
    <h1 class="h1">Indumentaria</h1>
      <br>
      
-
    <h2 class="h2" >Remeras</h2>
-<main class="Indu">
-   <main class="mainIndu">
-     <br>
-     <br>
-     <img class="img" src="../assets/img/remerablancaM-min.jpg" alt=" Remera Blanca">
-     <img class="img" src="../assets/img/remeragris.jfif" alt="" srcset="Remera Gris">
-     <img class="img" src="../assets/img/remeranegra.jfif" alt="  Remera Negra ">
-     <br>
-     <br>
-     <aside>
-     <p class="parrafo">Remera unisex confeccionada en algodón </p>
+<div class="cards d-flex flex-wrap justify-content-around">
+   <div class="p-3" style="width: 18rem;">
+      <img class="img-fluid" src="../assets/img/remerablancaM-min.jpg" class="card-img-top" alt="remera blanca">
+      <div class="card-body">
+        <h5 class="card-title">Remera blanca</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Agregar al carrito</a>
+        <br><br>
+        <div class="compra">
+          <label for="sexo">Talle</label>
+              <select name="Talle" >
+               <option value="L">Large</option>
+               <option value="M">Medium</option>
+               <option value="S">Small</option>
+               </select>
+              
+       </div>
+      </div>
+    </div>
 
-     </aside>
+    <div class="card" style="width: 18rem;">
+      <img class="p-3" src="../assets/img/RemeraVerd.jpg" class="card-img-top" alt="remeravrde">
+      <div class="card-body">
+        <h5 class="card-title">Remera verde</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Agregar al carrito</a>
+        <br><br>
+        <div class="compra">
+          <label for="sexo">Talle</label>
+              <select name="Talle" >
+               <option value="L">Large</option>
+               <option value="M">Medium</option>
+               <option value="S">Small</option>
+               </select>
+              
+       </div>
+      </div>
+    </div>
 
-<div class="compra">
-     <label for="sexo">Talle</label>
-     <select name="Talle" >
-        <option value="L">Large</option>
-        <option value="M">Medium</option>
-        <option value="S">Small</option>
-        </select>
-<button>Comprar</button>
+    <div class="card" style="width: 18rem;">
+      <img class="p-3" src="../assets/img/RemeraNegraWB.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Remera negra</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Agregar al carrito</a>
+        <br><br>
+        <div class="compra">
+          <label for="sexo">Talle</label>
+              <select name="Talle" >
+               <option value="L">Large</option>
+               <option value="M">Medium</option>
+               <option value="S">Small</option>
+               </select>
+              
+       </div>
+      </div>
+    </div>
 </div>
-</main>
-     <br>
+
 
      <h2 class="h2">Hoodie</h2>
-     <br>
-     <br>
-<main class="Indu2">
-     <img class="img" src="../assets/img/hodieH.jfif" alt="">
-     <img class="img" src="../assets/img/HODIEHVERD.jfif" alt="">
-     <br> <br>
-
-     <aside><p class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-    Assumenda amet non laboriosam ut culpa recusandae.</p>
-        </aside>
- <div class="compra">
-   <label for="sexo">Talle</label>
-       <select name="Talle" >
-        <option value="L">Large</option>
-        <option value="M">Medium</option>
-        <option value="S">Small</option>
-        </select>
-        <button>Comprar</button>
+     <div class="cards d-flex flex-wrap justify-content-around">
+      <div class="card my-3" style="width: 18rem;">
+         <img class="img-fluid" src="../assets/img/HoddieNegroMichelle.jpg" class="card-img-top" alt="Hoddie negro mujer">
+         <div class="card-body">
+           <h5 class="card-title">Hoddie negro</h5>
+           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+           <a href="#" class="btn btn-primary">Agregar al carrito</a>
+           <br><br>
+           <div class="compra">
+             <label for="sexo">Talle</label>
+                 <select name="Talle" >
+                  <option value="L">Large</option>
+                  <option value="M">Medium</option>
+                  <option value="S">Small</option>
+                  </select>
+                 
+          </div>
+         </div>
+       </div>
+       <div class="cards d-flex flex-wrap justify-content-around">
+        <div class="card p-3" style="width: 18rem;">
+           <img class="img-fluid" src="../assets/img/DSCHoddieVerdeW.jpg" class="card-img-top" alt="Hoddie verde hombre">
+           <div class="card-body">
+             <h5 class="card-title">Hoddie verde</h5>
+             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+             <a href="#" class="btn btn-primary">Agregar al carrito</a>
+             <br><br>
+             <div class="compra">
+               <label for="sexo">Talle</label>
+                   <select name="Talle" >
+                    <option value="L">Large</option>
+                    <option value="M">Medium</option>
+                    <option value="S">Small</option>
+                    </select>
+                   
+            </div>
+           </div>
+         </div>
+     
+        </div>
+        <div class="cards d-flex flex-wrap justify-content-around">
+         <div class="card p-3" style="width: 18rem;">
+            <img class="img-fluid" src="../assets/img/Hoddiegris.jpg" class="card-img-top" alt="Hoddie gris mujer">
+            <div class="card-body">
+              <h5 class="card-title">Hoddie gris</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Agregar al carrito</a>
+              <br><br>
+              <div class="compra">
+                <label for="sexo">Talle</label>
+                    <select name="Talle" >
+                     <option value="L">Large</option>
+                     <option value="M">Medium</option>
+                     <option value="S">Small</option>
+                     </select>
+                    
+             </div>
+            </div>
+          </div>
+ </div>
+ </div>
 </div>
-     <br>
-</main>
-     <h2>Shorts</h2>
 
-   <main class="Indu3">
+     <h2>Remerones</h2>
+  <div class="cards d-flex flex-wrap justify-content-around">
+      <div class="card my-3" style="width: 18rem;">
+         <img class="img-fluid" src="../assets/img/remeronNegroMJ.jpg" class="card-img-top" alt="remeron negro">
+         <div class="card-body">
+           <h5 class="card-title">Remeron negro</h5>
+           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+           <a href="#" class="btn btn-primary">Agregar al carrito</a>
+           <br><br>
+           <div class="compra">
+             <label for="sexo">Talle</label>
+                 <select name="Talle" >
+                  <option value="L">Large</option>
+                  <option value="M">Medium</option>
+                  <option value="S">Small</option>
+                  </select>
+                 
+          </div>
+         </div>
+       </div>
+   
 
-
-     <img class="img" src="../assets/img/SHORTNEGR.jfif" alt="">
-     <img class="img" src="../assets/img/SHORTGRIS.jfif" alt="">
-     <img class="img" src="../assets/img/SHORTROSA.jfif" alt="">
-<br><br>
-     <aside>
-       <p class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-    Dolorem dolore, itaque atque est reiciendis vel?</p>
-    <br>
-    <div class="compra">
-    <label for="sexo">Talle</label>
-     <select name="Talle" >
-        <option value="L">Large</option>
-        <option value="M">Medium</option>
-        <option value="S">Small</option>
-        </select>
-        <button>Comprar</button>
-      </div>
- </aside>
-</main>
-</main>
+   
+       <div class="card flex-wrap justify-content-around" style="width: 18rem;">
+         <img class="img-fluid" src="../assets/img/remeronGrisGori.jpg" class="card-img-top" alt="remeron gris">
+         <div class="card-body">
+           <h5 class="card-title">Remeron gris </h5>
+           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+           <a href="#" class="btn btn-primary">Agregar al carrito</a>
+           <br><br>
+           <div class="compra">
+             <label for="sexo">Talle</label>
+                 <select name="Talle" >
+                  <option value="L">Large</option>
+                  <option value="M">Medium</option>
+                  <option value="S">Small</option>
+                  </select>
+                 
+          </div>
+         </div>
+       </div>
+   </div>
 
 
      <br>
 
      <footer class="footer"><h5>©2022 GoriGlue todos los derechos reservados</h5></footer> 
- </body>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+   </body>
 </nav>
  </html>
